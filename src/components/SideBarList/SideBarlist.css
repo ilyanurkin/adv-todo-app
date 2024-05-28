@@ -1,0 +1,54 @@
+.list {
+  margin-bottom: 25px;
+}
+.list .list__remove-icon {
+  opacity: 0;
+}
+.list__add-button {
+  opacity: 0.4;
+  margin-left: 4px;
+  transition: all 500ms ease;
+}
+.list__add-button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 3px;
+}
+.list li:hover .list__remove-icon {
+  opacity: 0.2;
+}
+.list li:hover .list__remove-icon:hover {
+  opacity: 0.8;
+}
+.list li.active {
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.list li svg {
+  opacity: 0.4;
+}
+.list li svg:hover {
+  opacity: 0.8;
+}
+.list li i {
+  margin-right: 10px;
+  opacity: 0.6;
+  display: inline-flex;
+}
+.list li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.list:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.list span {
+  flex: 1;
+}/*# sourceMappingURL=SideBarList.css.map */

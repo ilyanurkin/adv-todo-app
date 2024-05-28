@@ -1,0 +1,39 @@
+.add-list__form {
+  min-width: 240px;
+  min-height: 150px;
+  position: absolute;
+  left: 70px;
+  bottom: 200px;
+  background: #ffffff;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 18px;
+}
+.add-list__form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.add-list__form button {
+  width: 100%;
+  margin-top: 10px;
+}
+.add-list__form .badge {
+  width: 20px;
+  height: 20px;
+  position: static;
+}
+.add-list__form .badge.active {
+  border: 2px solid #525252;
+}
+.add-list__form-colors {
+  display: flex;
+  justify-content: space-between;
+}
+.add-list__form-close-button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+.add-list__form-close-button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=AddList.css.map */

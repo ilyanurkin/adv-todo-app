@@ -1,0 +1,56 @@
+.ant-space-item span {
+  color: rgb(39, 32, 66) !important;
+}
+
+.settings {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+.settings__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  padding: 10px;
+}
+.settings__item:hover {
+  border: 1px solid #c9d1d3;
+  border-radius: 10px;
+  box-shadow: 1px 2px 20px #f3f3f3;
+  cursor: pointer;
+}
+.settings__item p {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.settings .ant-space {
+  display: flex;
+  flex-direction: column;
+}
+.settings h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  color: #b6e6bd !important;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  line-height: 39px;
+  font-size: 24px;
+  font-style: normal;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #666;
+}
+.settings h2:hover img {
+  opacity: 0.2;
+}/*# sourceMappingURL=Settings.css.map */

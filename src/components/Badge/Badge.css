@@ -1,0 +1,34 @@
+.badge {
+  width: 10px;
+  display: inline-block;
+  height: 10px;
+  border-radius: 30px;
+  position: relative;
+  left: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.badge--green {
+  background-color: #42b883 !important;
+}
+.badge--blue {
+  background-color: #64c4ed !important;
+}
+.badge--pink {
+  background-color: #ffbbcc !important;
+}
+.badge--grey {
+  background-color: #c9d1d3 !important;
+}
+.badge--lime {
+  background-color: #b6e6bd !important;
+}
+.badge--purple {
+  background-color: #c355f5 !important;
+}
+.badge--black {
+  background-color: #110133 !important;
+}
+.badge--red {
+  background-color: #ff6464 !important;
+}/*# sourceMappingURL=Badge.css.map */

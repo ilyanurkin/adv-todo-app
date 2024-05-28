@@ -1,0 +1,204 @@
+// Variables
+$side-bar-background-color: #f4f6f8;
+$border-color: #f3f3f3;
+$dark-background-color: rgb(39, 32, 66);
+//mixins
+@mixin roboto-font() {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin container-centered() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-around() {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+//global
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  @include roboto-font();
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+//classes
+.todo {
+  &.text-large {
+    h2 {
+      font-size: 40px !important;
+    }
+    * {
+      font-size: 22px !important;
+    }
+  }
+  &.text-small {
+    h2 {
+      font-size: 16px !important;
+    }
+    * {
+      font-size: 11px !important;
+    }
+  }
+  &.text-amatic {
+    * {
+      font-family: "Amatic SC", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  &.text-roboto {
+    * {
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  &.text-oswald {
+    * {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+  &.text-caveat {
+    * {
+      font-family: "Caveat", cursive !important;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+  &.text-pacifico {
+    * {
+      font-family: "Pacifico", cursive !important;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+  &.text-playfair {
+    * {
+      font-family: "Playfair Display", serif !important;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  &.dark {
+    background-color: $dark-background-color;
+    * {
+      color: white;
+      opacity: 1;
+    }
+    svg {
+      path {
+        fill: white !important;
+        stroke: white !important;
+      }
+    }
+    .list__remove-icon {
+      stroke: white !important;
+      fill: white !important;
+      path {
+        fill: white;
+        opacity: 1;
+      }
+    }
+    .todo__sidebar {
+      border-right: none;
+      .add-list {
+        &__form {
+          background-color: rgb(39, 32, 66);
+          input {
+            background-color: rgb(77, 71, 99);
+          }
+        }
+      }
+      .active {
+        background-color: rgb(39, 32, 66);
+      }
+      background-color: rgb(77, 71, 99);
+      .list li:hover {
+        background-color: rgb(39, 32, 66);
+      }
+    }
+  }
+  @include container-centered();
+  min-width: 70vw;
+  min-height: calc(100vh - 50px);
+  box-shadow: 1px 2px 20px #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  font-size: 14px;
+
+  &__sidebar {
+    background-color: $side-bar-background-color;
+    width: 40%;
+
+    min-height: 100%;
+    border-right: 1px solid $border-color;
+    padding: 60px 20px;
+    border-radius: 10px 0 0 10px;
+  }
+  display: flex;
+}
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 100%;
+  font-size: 14px;
+  &:focus {
+    border-color: #dbdbdb78;
+  }
+}
+.button {
+  background-color: #4dd599;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 0;
+  transition: all 500ms ease;
+
+  &:hover {
+    background: darken($color: #4dd599, $amount: 10);
+    cursor: pointer;
+  }
+  &:disabled {
+    background: #f4f6f8;
+    color: #9c9c9c;
+    &:hover {
+      background: #f4f6f8;
+      color: #9c9c9c;
+    }
+  }
+  &.button-grey {
+    background: #f4f6f8;
+    color: #9c9c9c;
+    &:hover {
+      background-color: darken($color: #f4f6f8, $amount: 10);
+      color: darken($color: #9c9c9c, $amount: 10);
+    }
+  }
+}

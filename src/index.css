@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.todo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 70vw;
+  min-height: calc(100vh - 50px);
+  box-shadow: 1px 2px 20px #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  font-size: 14px;
+  display: flex;
+}
+.todo.text-large h2 {
+  font-size: 40px !important;
+}
+.todo.text-large * {
+  font-size: 22px !important;
+}
+.todo.text-small h2 {
+  font-size: 16px !important;
+}
+.todo.text-small * {
+  font-size: 11px !important;
+}
+.todo.text-amatic * {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.todo.text-roboto * {
+  font-family: "Roboto", sans-serif;
+}
+.todo.text-oswald * {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.todo.text-caveat * {
+  font-family: "Caveat", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.todo.text-pacifico * {
+  font-family: "Pacifico", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.todo.text-playfair * {
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.todo.dark {
+  background-color: rgb(39, 32, 66);
+}
+.todo.dark * {
+  color: white;
+  opacity: 1;
+}
+.todo.dark svg path {
+  fill: white !important;
+  stroke: white !important;
+}
+.todo.dark .list__remove-icon {
+  stroke: white !important;
+  fill: white !important;
+}
+.todo.dark .list__remove-icon path {
+  fill: white;
+  opacity: 1;
+}
+.todo.dark .todo__sidebar {
+  border-right: none;
+  background-color: rgb(77, 71, 99);
+}
+.todo.dark .todo__sidebar .add-list__form {
+  background-color: rgb(39, 32, 66);
+}
+.todo.dark .todo__sidebar .add-list__form input {
+  background-color: rgb(77, 71, 99);
+}
+.todo.dark .todo__sidebar .active {
+  background-color: rgb(39, 32, 66);
+}
+.todo.dark .todo__sidebar .list li:hover {
+  background-color: rgb(39, 32, 66);
+}
+.todo__sidebar {
+  background-color: #f4f6f8;
+  width: 40%;
+  min-height: 100%;
+  border-right: 1px solid #f3f3f3;
+  padding: 60px 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 100%;
+  font-size: 14px;
+}
+.field:focus {
+  border-color: rgba(219, 219, 219, 0.4705882353);
+}
+
+.button {
+  background-color: #4dd599;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 0;
+  transition: all 500ms ease;
+}
+.button:hover {
+  background: #2ec180;
+  cursor: pointer;
+}
+.button:disabled {
+  background: #f4f6f8;
+  color: #9c9c9c;
+}
+.button:disabled:hover {
+  background: #f4f6f8;
+  color: #9c9c9c;
+}
+.button.button-grey {
+  background: #f4f6f8;
+  color: #9c9c9c;
+}
+.button.button-grey:hover {
+  background-color: #d5dde4;
+  color: #838383;
+}/*# sourceMappingURL=index.css.map */
